@@ -14,4 +14,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.title$ = this.appService.fetchTitle();
   }
+
+  setTitle(title: {value: string}) {
+    this.appService.setTitle(title.value);
+  }
 }

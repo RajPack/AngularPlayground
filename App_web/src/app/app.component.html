@@ -1,8 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1 *ngIf="title | async">
+  <h1 *ngIf="title$ | async">
     Welcome to {{ title$ | async }}!
   </h1>
+  <div class="row">
+    <input type="text" name="" #title id="">
+    <button (click)="setTitle(title)">Set New Title</button>
+  </div>
 </div>
 
 <router-outlet></router-outlet>

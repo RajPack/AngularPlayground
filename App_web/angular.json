@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "App": {
+    "App_web": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -106,7 +106,7 @@
         }
       }
     },
-    "App-e2e": {
+    "App_web-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -135,7 +135,7 @@
       }
     }
   },
-  "defaultProject": "App",
+  "defaultProject": "App_web",
   "cli": {
     "defaultCollection": "@ngrx/schematics"
   }

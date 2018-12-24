@@ -25,4 +25,8 @@ export class AppService {
       console.log(data);
     }));
   }
+
+  setTitle(title: string) {
+    this.store.dispatch(new SetTitle(title));
+  }
 }
