@@ -1,0 +1,26 @@
+[
+    {
+        "name": "tie",
+        "id": 12,
+        "desc": "A good tie",
+        "rating": 3.5
+    },
+    {
+        "name": "Shoe",
+        "id": 134,
+        "desc": "A good Shoe",
+        "rating": 3
+    },
+    {
+        "name": "Belt",
+        "id": 123,
+        "desc": "A good belt",
+        "rating": 3.5
+    },
+    {
+        "name": "lamp",
+        "id": 122,
+        "desc": "A good lamp",
+        "rating": 3.5
+    }
+]
