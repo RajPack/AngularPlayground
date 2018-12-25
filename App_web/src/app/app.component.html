@@ -11,5 +11,12 @@
       Set New Title
     </button>
   </div>
+  <div class="m-4 pl-4">
+    <h1>List of Products</h1>
+    <div *ngFor="let product of products$ | async">
+      {{product.name}}
+    </div>
+  </div>
+
   <router-outlet></router-outlet>
 </div>
