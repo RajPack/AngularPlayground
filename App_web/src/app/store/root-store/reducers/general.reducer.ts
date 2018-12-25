@@ -13,6 +13,7 @@ export const initialState: State = {
 export function reducer(state = initialState, action: GeneralActions): State {
   switch (action.type) {
     case GeneralActionTypes.SetTitle:
+    case GeneralActionTypes.LoadTitle:
       return { ...state, title: action.payload };
       break;
     default:

@@ -14,4 +14,8 @@ router.get('/allProducts', function (req, res, next) {
     res.send(appData);
 });
 
+router.post('/setTitle', function(req, res, next) {
+    res.send(appOperations.setTitle(req.body.val))
+})
+
 module.exports = router;

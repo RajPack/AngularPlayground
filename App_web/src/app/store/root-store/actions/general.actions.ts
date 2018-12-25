@@ -1,7 +1,13 @@
 import { Action } from '@ngrx/store';
 
 export enum GeneralActionTypes {
-  SetTitle = '[General] Set Title'
+  SetTitle = '[General] Set Title',
+  LoadTitle = '[General] Load Title'
+}
+
+export class LoadTitle implements Action {
+  readonly type = GeneralActionTypes.LoadTitle;
+  constructor(public payload: string) { }
 }
 
 export class SetTitle implements Action {
@@ -9,7 +15,7 @@ export class SetTitle implements Action {
   constructor(public payload: string) { }
 }
 
-export type GeneralActions = SetTitle;
+export type GeneralActions = SetTitle | LoadTitle;
 
 
 

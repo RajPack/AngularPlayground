@@ -17,5 +17,7 @@ export class AppComponent implements OnInit {
 
   setTitle(title: {value: string}) {
     this.appService.setTitle(title.value);
+    title.value = "";
+    console.log('value reset')
   }
 }

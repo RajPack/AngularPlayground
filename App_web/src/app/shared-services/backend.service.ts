@@ -12,4 +12,7 @@ export class BackendService {
   get(params?: { url: string }) {
     return this.http.get(params.url);
   }
+  post(params?: {url: string, data: any}) {
+    return this.http.post(params.url, params.data);
+  }
 }

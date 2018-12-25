@@ -1,12 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1 *ngIf="title$ | async">
-    Welcome to {{ title$ | async }}!
-  </h1>
-  <div class="row">
-    <input type="text" name="" #title id="">
-    <button (click)="setTitle(title)">Set New Title</button>
-  </div>
-</div>
 
-<router-outlet></router-outlet>
+<div class="col-md-8" style="margin:auto;">
+  <div class="appContainer" style="text-align:center">
+    <h1 *ngIf="(title$ | async)">Welcome to {{ title$ | async }}!</h1>
+  </div>
+  <div class="  m-4 pl-4">
+    <p>Change title here:</p>
+    <input type="text" name="" #title id="" class="mb-3 form-control" />
+    <button class="btn btn-success" (click)="setTitle(title)">
+      Set New Title
+    </button>
+  </div>
+  <router-outlet></router-outlet>
+</div>
